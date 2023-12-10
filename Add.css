@@ -1,0 +1,262 @@
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-position: center;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    margin-top: -10px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#icon{
+    display: none;
+}
+.Add{
+    width: 100%;
+    padding-top:100px;
+    margin: auto;
+    text-align: center;
+    
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #009688;
+
+}
+
+p{
+    font-size: 24px;
+    padding: 10px;
+    
+}
+.list{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-sec{
+   
+    flex-basis: 24%;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    
+    box-shadow: 0 10px 20px 3px #009688;
+    cursor: pointer;
+    transition: transform .5s;
+    justify-content: space-between;
+    
+    
+}
+.con{
+    text-align: justify;
+    font-size: 20px;
+}
+.list-sec:hover{
+    background-color: rgb(68, 189, 148);
+
+}
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+
+  .hotel-gallery {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    align-content: center;
+  }
+  
+  .hotel-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+ 
+  @media screen and (max-width: 800px) {
+    .hotel-gallery {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .hotel-gallery {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .hotel{
+      width: 100%;
+      align-content: center;
+      margin-left: 12%;
+  }
+
+
+  .services-section{
+    background: url(https://media.istockphoto.com/photos/businessman-working-at-cafe-picture-id682438104?b=1&k=20&m=682438104&s=170667a&w=0&h=MLJaxUd20FzD7pXt6MDDrRz0Eb47IkmTjYnc3nHazAY=);
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+  }
+  
+
+  
+
+
+
+  
+ 
+  
+ 
+
+
+
+
+
+
+
+
+
+
+

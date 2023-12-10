@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+    <link rel="stylesheet" href="Query.css">
+    
+</head>
+<body>
+    <section header="main">
+        
+        
+        <div class="banner">
+        
+                <i class="fa fa-times"id="icon" onclick="hidemenu()"></i>
+                
+            </div>
+            <i class="fa fa-bars" id="icon"onclick="showmenu()"></i>
+
+            <div class="content">
+                
+               
+                  <h1>  Queries Regarding </h1>
+                <p>Explore with your own. We help you What you want.<br>
+                   We are the best travel guider for all of tourists. </p>
+            
+            <div>
+                <button type="button"><span></span>Login</button>
+                <button type="button"><span></span>Exit</button>
+                <button type="button"><span></span>Home</button>
+            </div>
+        </div>
+
+        <form class="box" action="index.html" method="post">
+            <h1>Login</h1>
+            <input type="text" name="" placeholder="Username">
+            <input type="password" name="" placeholder="Password">
+            <input type="submit" name="" value="Login">
+          </form>
+         
+                          
+                      
+                             <!-- vuejs htmls -->
+                         <div id="app" style="margin-top:150px;">
+                                         <div class="rightone">
+                                         <span class="spani">Welcome <b>{{title}} </b><b>{{fname}}</b><br><br><br>
+                                         Please check your details before you submit. <br><br><br>
+                                         Last Name : {{lname}}<br><br>
+                                         Age : {{age}} <br><br>
+                                         Gender : {{gender}}<br><br>
+                                         Country : {{country}} <br><br>
+                                         Email : {{email}}<br><br>
+                                         Telephone : {{telephone}} <br><br>
+                                         Task One : {{labela}} <br>
+                                         Task Two : {{labelb}} <br>
+                                         Task Three : {{labelc}} <br>
+                                         Task Four : {{labeld}}<br>
+                                         Task Five : {{labele}}<br>
+                                         Task Six : {{labelf}}<br>
+                                         Task Seven : {{labelg}}<br>
+                                         Task Eight : {{labelh}}<br>
+                                         Task Nine : {{labeli}}<br>
+                                         Task Ten : {{labelj}}<br><br><br>
+                                         Your Inquiry : {{para}} </span>
+                                         </div>
+                                         <div class="leftone">
+                                                         <h3>Enter Your Details & Make A To_Do_List</h3><br>
+                                         <span>Select A Title 
+          <span style="font-size:20px;color:red;">&#10023;</span> </span></br>
+                                         <select v-model="title" class="tags" required>
+            <option disabled value="">Title</option>
+            <option>Mr</option>
+            <option>Mrs</option>
+            <option>Miss</option>
+          </select> 
+          <form action="submitted.html" id="formmain">
+                      <p>
+                             <label for="fname" class="label1">First Name  
+          <span style="font-size:20px;color:red;">&#10023;</span></label><br>
+                             <input type="text" v-model="fname" class="tags" required>
+             </p>
+             <p>
+                             <label for="lname" class="label1">Last Name 
+          <span style="font-size:20px;color:red;">&#10023;</span> </label></br>
+                             <input type="text" v-model="lname" class="tags">
+             </p>
+                     <span>Please select your age 
+          <span style="font-size:20px;color:red;">&#10023;</span> </span></br>
+                      <select v-model="age" class="tags">
+                                      <option disabled value="">Age </option>
+                                      <option>13</option>
+                                      <option>14</option>
+                                      <option>15</option>
+                                      <option>16</option>
+                                      <option>17</option>
+                                      <option>18</option>
+                                      <option>19</option>
+                                      <option>20</option>
+                                      <option>21</option>
+                                      <option>22</option>
+                                      <option>23</option>
+                                      <option>24</option>
+                                      <option>25</option>
+                                      <option>26</option>
+                                      <option>27</option>
+                                      <option>28</option>
+                                      <option>29</option>
+                                      <option>30</option>
+                                      <option>31</option>
+                                      <option>32</option>
+                                      <option>33</option>
+                                      <option>34</option>
+                                      <option>35</option>
+                                      <option>36</option>
+                                      <option>37</option>
+                                      <option>38</option>
+                                      <option>39</option>
+                                      <option>40</option>
+                                      <option>41</option>
+                                      <option>42</option>
+                                      <option>43</option>
+                                      <option>44</option>
+                                      <option>45</option>
+                                      <option>46</option>
+                                      <option>47</option>
+                                      <option>48</option>
+                                      <option>49</option>
+                                      <option>50</option>
+                                      <option>51</option>
+                                      <option>52</option>
+                                      <option>53</option>
+                                      <option>54</option>
+                                      <option>55</option>
+                                      <option>56</option>
+                                      <option>57</option>
+                                      <option>58</option>
+                                      <option>59</option>
+                                      <option>60</option>
+                                      <option>61</option>
+                                      <option>62</option>
+                                      <option>63</option>
+                                      <option>64</option>
+                                      <option>65</option>
+                                      <option>66</option>
+                                      <option>67</option>
+                                      <option>68</option>
+                                      <option>69</option>
+                                      <option>70</option>
+                                      <option>71</option>
+                                      <option>72</option>
+                                      <option>73</option>
+                                      <option>74</option>
+                                      <option>75</option>
+                                      <option>76</option>
+                                      <option>77</option>
+                                      <option>78</option>
+                      </select>
+                      </br>
+                      </br>
+                      <span>Gender 
+          <span style="font-size:20px;color:red;">&#10023;</span></span></br>
+                      <input type="radio" id="one" value="male" v-model="gender">
+                      <label for="male" class="tags">Male</label>
+                      <input type="radio" id="two" value="female" v-model="gender">
+                      <label for="female" class="tags">Female</label>
+                                         <p>
+                             <label for="country" class="label1">Your Country 
+          <span style="font-size:20px;color:red;">&#10023;</span></label></br>
+                             <input type="text" v-model="country" class="tags" required>
+             </p>
+                                         <p>
+                             <label for="email" class="label1">Email address 
+          <span style="font-size:20px;color:red;">&#10023;</span> </label></br>
+                             <input type="email" placeholder="email@example.com" v-model="email" class="tags">
+             </p>
+             <p>
+                             <label for="telephone" class="label1">Telephone 
+          <span style="font-size:20px;color:red;">&#10023;</span></label></br>
+                             <input type="tel" v-model="telephone" class="tags" placeholder="+94-11-2345678" required>
+             </p></br>
+             <span>Things to do 
+          <span style="font-size:20px;color:red;">&#10023;</span></span>
+             <ul>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity1" v-model="labela"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity2" v-model="labelb"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity3" v-model="labelc"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 4" v-model="labeld"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 5" v-model="labele"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 6" v-model="labelf"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 7" v-model="labelg"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 8" v-model="labelh"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 9" v-model="labeli"></textarea>
+                             </li>
+                             <li>
+                                             <textarea class="taglist" rows="2" cols="45" placeholder="Activity 10" v-model="labelj"></textarea>
+                             </li>
+                             
+             </ul>
+             
+          <span style="font-size:20px;color:red;">&#10023;</span></span><br>
+                             <textarea id="mainfor" rows="5" cols="50" v-model="para" class="tags" placeholder="Enter your any kind of issues and doubts "></textarea><br>
+            <p> <label for="submit" class="label1"></label>
+                             <input type="submit" id="submit" onClick="myFunction()"/>
+                             
+                             <label for="reset" class="label1"></label>
+                             <input type="reset" id="reset"></p><br>
+             </form>
+                         
+        
+                  <script>
+                                  var app = new Vue({
+                                                  el :"#app",
+                                                  data:{
+                                                                  picked:"",
+                                                        title:"",
+                                                        fname:"",
+                                                        lname:"",
+                                                        age:"",
+                                                        gender:"",
+                                                        country:"",
+                                                        email:"",
+                                                        telephone:"",
+                                                        para:"",
+                                                        labela:"",
+                                                        labelb:"",
+                                                        labelc:"",
+                                                        labeld:"",
+                                                        labele:"",
+                                                        labelf:"",
+                                                        labelg:"",
+                                                        labelh:"",
+                                                        labeli:"",
+                                                        labelj:"",
+                                                        },
+                                  });
+                  </script>
+                  <script>
+                                  function myFunction(){
+                                                  window.location.href="submit.html";
+                                  }
+                  </script>
+          
+           
+          
+</body>
+</html>

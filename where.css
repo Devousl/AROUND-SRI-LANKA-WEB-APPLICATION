@@ -1,0 +1,166 @@
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://www.srilankanvoyages.com/wp-content/uploads/2020/07/pic-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    margin-top: -10px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#icon{
+    display: none;
+}
+
+.container{
+    width: 1300px;
+    height: 400px;
+    background: rgb(122, 25, 25);
+    margin: 120px auto;
+    display:flex;
+}
+   .col{
+height:100%;
+width: 400%;
+flex:1;
+color: rgb(0, 0, 0);
+box-sizing:border-box;
+padding:25px;
+position: relative;
+transition:0.7s;
+font-size: 30px;
+}
+
+.col:nth-child(1){
+    background: rgb(177, 178, 179);
+}
+.col:nth-child(2){
+    background: rgb(28, 92, 100);
+}
+.col:nth-child(3){
+    background: rgb(177, 178, 179);
+}
+h2{
+    text-align:center;
+    font-size:22px;
+    font-weight: 600;
+}
+.caption{
+    max-width:230px;
+    font-size:12px;
+    margin: 28px 0;
+    display: none;
+}
+.caption button{
+    border:1px solid #fff;
+    background:transparent;
+    outline:none;
+    padding:8px 18px;
+    color: thistle;
+    border-radius:30px;
+    margin-top:20px;
+    cursor:pointer;
+    font-size:12px;
+}
+.col img{
+    width: 400px;
+    height: 300px;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: turquoise;
+}
+.col:hover{
+    flex-grow: 2.5;
+}
+.col:hover .caption{
+    display: block;
+}
+.col:hover h2{
+    text-align: left;
+}
+.text-place{
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.text-place h1{
+    margin: auto;
+    font-size: 30px;
+    color: #054942;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.text-place h1::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+
+

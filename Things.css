@@ -1,0 +1,155 @@
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://www.srilankanvoyages.com/wp-content/uploads/2020/07/pic-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    margin-top: -10px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#icon{
+    display: none;
+}
+.sigiri{
+    width: 100%;
+    padding: 70px 0;
+    
+
+}
+section{
+    background-color: #e0e0e0;
+    
+    
+}
+
+
+.text-place{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.text-place h1{
+    margin: auto;
+    font-size: 30px;
+    color: #054942;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.text-place p{
+    margin: auto;
+    font-size: 25px;
+    color: #020c0b;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
+}
+
+
+.slide{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 5% auto 90%;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-bottom: 10%;
+
+}
+.photo{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0%;
+    transition: 0.8s;   
+
+}
+
+.photo p{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'The Nautigal';
+    color: #009688;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.photo:hover{
+    flex-basis: 50%;
+}
+.text-place h1::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+
+
+
+
+
+

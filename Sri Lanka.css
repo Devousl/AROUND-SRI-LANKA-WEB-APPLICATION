@@ -1,0 +1,426 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: cursive;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://images.unsplash.com/photo-1607430866111-3f2b5804f850?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2lubmFtb258ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+background: #83142C;
+position: absolute;
+left: 0%;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid  #83142C;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #44000D;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#icon{
+    display: none;
+}
+
+
+
+
+
+
+.place{
+    margin: 0;
+}
+.slider{
+    width:1300px;
+    max-width:100vw;
+    height: 700px;
+    margin:0;
+    position:relative;
+}
+.list{
+    position:absolute;
+    top: 0;
+    left: 420;
+    height: 100%;
+    display:flex;
+    width:max-content;
+}
+
+.list img{
+    width:1800px;
+    max-width:100px;
+    height:100%;
+    object-fit:cover;
+
+
+}
+
+.buttons{
+    position:absolute;
+    top: 45%;
+    left:5%;
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+}
+.buttons buttonN{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color: #44000D;
+    color: rgb(0, 0, 0);
+    border:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+}
+.dots{
+    position:absolute;
+    bottom: 10px;
+    color:rgb(0, 0, 0);
+    left:0;
+    width:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style:none;
+    width:10px;
+    height:10px;
+    background-color:#010505;
+    margin: 20px;
+    border-radius:20px;
+}
+    
+.dots li.active{
+    width:30px;
+    
+}
+
+
+
+.feature-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0 4px;
+}
+.box{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: cornsilk;
+    position: relative;
+    
+}
+.box img{
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    
+    opacity: 0;
+    transition: 1s;
+
+}
+.box:hover .overlay{
+    opacity: 1;
+
+}
+.box-details{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.box-details p{
+    font-size: 14px;
+}
+
+.box:hover .box-details{
+    bottom: 40%;
+    opacity: 1;
+
+}
+#visitors{
+    width:100%;
+    padding: 70px 0;
+
+}
+
+.says-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+.says-column{
+    flex-basis: 28%;
+    padding:10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #009688;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.says-column p{
+    font-size: 14px;
+}
+.users{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+}
+.users img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.says-column:hover{
+    transform: translateY(-7px);
+
+}
+.others{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.help{
+    flex-basis: 28%;
+    padding:10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+   text-align: center;
+    
+}
+.final{
+    
+    width:100%;
+    height: 30%;
+    padding: 70px 0;
+    background: #218377;
+    margin-top: 4%;
+}
+.footer-row{
+    width: 60%;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+}
+
+
+
+.senten{
+    float: right;
+}
+
+
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.fa-youtube-play {
+    background: #b10b10;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.fa-facebook {
+    background: #2406a8;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.fa-instagram {
+    background: #940a4a;
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.fa-twitter {
+    background: #2406a8;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.fa-whatsapp {
+    background: #069e1b;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    width: 28px;
+    text-decoration: none;
+    margin: 5px 80px;
+    text-align: center;
+}
+
+.foot-row1{
+    text-align: center;
+}
+.foot-row1 #uth{
+    border: 2px solid #010505;
+    margin: 20px 2px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
